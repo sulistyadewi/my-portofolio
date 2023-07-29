@@ -1,4 +1,5 @@
 import React from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Hero = () => {
   return (
@@ -14,6 +15,11 @@ const Hero = () => {
       <button className="bg-white mt-5 px-20 py-3 rounded tracking-wider font-semibold drop-shadow-lg hover:bg-gray-300 transform active:translate-y-1">
         Project
       </button>
+      <ul>
+        <li>{/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}</li>
+        <li>{/* <FontAwesomeIcon icon={faYoutube} /> */}</li>
+        <li>{/* <FontAwesomeIcon icon={faInstagram} /> */}</li>
+      </ul>
     </div>
   );
 };

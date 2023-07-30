@@ -4,9 +4,9 @@ const Header = () => {
   return (
     <header className="bg-blue-300 z-50 fixed w-full flex items-center justify-between">
       <div className="flex w-full h-full items-center px-2 py-3 justify-between relative top-0 shadow-2xl">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 xl:ml-3">
           <img
-            className="w-8 h-8 rounded-full ml-2 md:w-10 md:h-10 md:ml-3"
+            className="w-8 h-8 rounded-full ml-2 md:w-10 md:h-10 md:ml-3 xl:w-10 xl:h-10"
             src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
             alt=""
           />
@@ -30,8 +30,8 @@ const Header = () => {
             />
           </svg>
         </button>
-        <div className="hidden md:block md:py-0">
-          <ul className="flex gap-10 md:px">
+        <div className="hidden md:block md:py-3">
+          <ul className="flex gap-12 md:px-4">
             <li className="font-semibold">Home</li>
             <li className="font-semibold">About</li>
             <li className="font-semibold">Project</li>

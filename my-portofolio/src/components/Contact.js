@@ -3,14 +3,14 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="px-4 bg-violet-400 pb-14">
-      <h1 className="pt-16 text-center text-4xl text-white font-bold tracking-wider">
+      <h1 className="pt-16 text-center text-4xl text-white font-bold tracking-wider sm:px-6">
         CONTACT
       </h1>
       <p className="mt-10 text-center text-white leading-relaxed">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti cum
         eaque autem vitae error, nemo officia eligendi.
       </p>
-      <div className="bg-white mt-14 max-w-sm px-6 py-6 rounded-lg mx-auto">
+      <div className="bg-white mt-14 max-w-sm px-6 py-6 rounded-lg mx-auto sm:max-w-lg">
         <form className="">
           <div className="flex flex-col">
             <label>Name</label>

@@ -3,20 +3,20 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="px-4 bg-violet-400 pb-14">
-      <h1 className="pt-16 text-center text-4xl text-white font-bold tracking-wider sm:px-6">
+      <h1 className="pt-16 text-center text-4xl text-white font-bold tracking-wider sm:text-4xl lg:pt-24">
         CONTACT
       </h1>
-      <p className="mt-10 text-center text-white leading-relaxed">
+      <p className="mt-10 text-center text-white leading-relaxed md:px-6 lg:px-32 xl:px-72">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti cum
         eaque autem vitae error, nemo officia eligendi.
       </p>
-      <div className="bg-white mt-14 max-w-sm px-6 py-6 rounded-lg mx-auto sm:max-w-lg">
+      <div className="bg-white mt-14 max-w-sm px-6 py-6 rounded-lg mx-auto sm:max-w-lg md:max-w-xl lg:max-w-2xl">
         <form className="">
           <div className="flex flex-col">
             <label>Name</label>
             <input
               type="text"
-              className="h-14 mt-3 rounded bg-slate-200"
+              className="h-14 mt-3 p-3 rounded bg-slate-200"
               placeholder="Enter Your Name"
             />
           </div>

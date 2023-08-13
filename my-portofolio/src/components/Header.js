@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [isOpen, setisOpen] = useState(false);
+  const toogleMenu = () => {
+    setisOpen(!isOpen);
+  };
+  console.log(toogleMenu, "tes");
   return (
-    <header className="bg-blue-300 z-50 fixed w-full flex items-center justify-between">
+    <header className="bg-white z-50 fixed w-full flex items-center justify-between">
       <div className="flex w-full h-full items-center px-2 py-3 justify-between relative top-0 shadow-2xl">
         <div className="flex items-center gap-3 xl:ml-3">
           <img
@@ -40,9 +45,11 @@ const Header = () => {
         </div>
         <div
           id="menumobile"
-          className="hidden absolute h-48 w-full bg-blue-500 top-14"
+          // isOpen={isOpen}
+          onClick={() => toogleMenu()}
+          className="absolute h-48 w-full bg-blue-500 top-14 left-0 pl-5"
         >
-          <ul className="flex flex-col gap-5">
+          <ul className="flex flex-col gap-5 pt-4">
             <li>Home</li>
             <li>About</li>
             <li>Project</li>

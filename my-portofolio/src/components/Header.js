@@ -19,7 +19,7 @@ const Header = () => {
             Sulistya
           </h1>
         </div>
-        <button id="menuBar" className="md:hidden">
+        <button id="menuBar" onClick={toogleMenu} className="md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -45,9 +45,11 @@ const Header = () => {
         </div>
         <div
           id="menumobile"
-          // isOpen={isOpen}
-          onClick={() => toogleMenu()}
-          className="absolute h-48 w-full bg-blue-500 top-14 left-0 pl-5"
+          className={
+            isOpen
+              ? "absolute h-48 w-full bg-blue-500 top-14 left-0 pl-5 transition-all duration-500 ease-in-out"
+              : "absolute h-48 w-full bg-blue-500 -top-96 left-0 pl-5 transition-all duration-500 ease-in-out"
+          }
         >
           <ul className="flex flex-col gap-5 pt-4">
             <li>Home</li>

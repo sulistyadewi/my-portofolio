@@ -23,28 +23,30 @@ const Project = (props) => {
         quasi nobis neque odit hic voluptas in obcaecati.
       </p>
       {props.projects.map((project, index) => (
-        <div key={index} className="mt-16 md:mt-20 lg:flex lg:px-4">
-          <img
-            src={project.image}
-            alt=""
-            className="max-w-sm mx-auto sm:max-w-lg md:max-w-xl xl:max-w-2xl"
-          />
-          <div className="lg:flex lg:flex-col lg:self-center xl:px-12">
-            <h3 className="mt-6 text-center font-semibold text-lg sm:text-xl md:text-2xl md:mt-8 lg:text-left">
-              {project.title}
-            </h3>
-            <p className="mt-4 text-sm text-slate-500 text-center leading-relaxed sm:px-8 sm:leading-loose md:px-16 lg:text-left lg:px-0">
-              {project.desc}
-            </p>
-            <div className="flex justify-center lg:justify-normal">
-              <button className="bg-violet-400 mt-6 px-7 py-2 rounded text-white text-sm font-semibold shadow-md tracking-widest hover:bg-gradient-to-b hover:from-violet-400 hover:to-violet-600 transform transition active:translate-y-1 active:duration-300 sm:py-3 sm:px-11 sm:mt-8 xl:py-4 xl:shadow-lg">
-                <a href={project.url}>CASE STUDY</a>
-              </button>
+        <div key={index} className="mt-16 mx-auto md:mt-20 lg:flex lg:px-4 ">
+          <div className="lg:flex lg:self-center">
+            <img
+              src={project.image}
+              alt=""
+              className="max-w-sm mx-auto sm:max-w-lg md:max-w-xl xl:max-w-2xl"
+            />
+            <div className="lg:flex lg:flex-col lg:self-center   xl:px-12">
+              <h3 className="mt-6 text-center font-semibold text-lg sm:text-xl md:text-2xl md:mt-8 lg:text-left">
+                {project.title}
+              </h3>
+              <p className="mt-4 text-sm text-slate-500 text-center leading-relaxed sm:px-8 sm:leading-loose md:px-16 lg:text-left lg:px-0">
+                {project.desc}
+              </p>
+              <div className="flex justify-center lg:justify-normal">
+                <button className="bg-violet-400 mt-6 px-7 py-2 rounded text-white text-sm font-semibold shadow-md tracking-widest hover:bg-gradient-to-b hover:from-violet-400 hover:to-violet-600 transform transition active:translate-y-1 active:duration-300 sm:py-3 sm:px-11 sm:mt-8 xl:py-4 xl:shadow-lg">
+                  <a href={project.url}>CASE STUDY</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       ))}
-      <div className="bg-violet-400 mt-10 max-w-xs rounded-md px-6 py-6 mx-auto lg:ml-20">
+      <div className="bg-violet-400 mt-10 max-w-xs rounded-md px-6 py-6 mx-auto">
         <form
           onSubmit={(event) => {
             event.preventDefault();

@@ -20,7 +20,7 @@ const About = (props) => {
             <p className="mt-5 text-slate-600 sm:leading-loose sm:mt-7 lg:mt-7">
               Hey! it's <span className="font-semibold">Sulistya</span> and i'm
               <span className="font-semibold"> Fronted Web Developer </span>
-              located in Indonesia.
+              located in Indonesia. I am a student.
             </p>
             <p className="mt-3 text-slate-600 sm:leading-loose">
               I'm a bit of a digital product junky. Over the years, I've used

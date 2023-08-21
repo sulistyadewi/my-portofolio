@@ -8,7 +8,7 @@ const Header = () => {
   console.log(toogleMenu, "tes");
   return (
     <header className="bg-white z-50 fixed w-full flex items-center justify-between">
-      <div className="flex w-full h-full items-center px-2 py-3 justify-between relative top-0 shadow-2xl">
+      <div className="flex w-full h-full z-50 items-center px-2 py-3 justify-between relative top-0 shadow-2xl">
         <div className="flex items-center gap-3 xl:ml-3">
           <img
             className="w-8 h-8 rounded-full ml-2 md:w-10 md:h-10 md:ml-3 xl:w-10 xl:h-10"
@@ -19,21 +19,38 @@ const Header = () => {
             Sulistya
           </h1>
         </div>
-        <button id="menuBar" onClick={toogleMenu} className="md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
+        <button id="menuBar" onClick={toogleMenu} className="">
+          {isOpen ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-6 h-6 flex md:hidden"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-6 h-6 flex md:hidden"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          )}
         </button>
         <div className="hidden md:block md:py-3">
           <ul className="flex gap-12 md:px-4">
@@ -47,8 +64,8 @@ const Header = () => {
           id="menumobile"
           className={
             isOpen
-              ? "absolute h-48 w-full bg-blue-500 top-14 left-0 pl-5 transition-all duration-500 ease-in-out"
-              : "absolute h-48 w-full bg-blue-500 -top-96 left-0 pl-5 transition-all duration-500 ease-in-out"
+              ? "absolute h-48 w-full bg-blue-500 top-14 left-0 pl-5 -z-10 transition-all duration-500 ease-in-out"
+              : "absolute h-48 w-full bg-blue-500 -top-96 left-0 pl-5 -z-10 transition-all duration-500 ease-in-out"
           }
         >
           <ul className="flex flex-col gap-5 pt-4">
